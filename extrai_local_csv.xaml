@@ -139,7 +139,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1530,3536" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="1530,3500" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Name="LastRowIndex">
         <sap:WorkflowViewStateService.ViewState>
@@ -155,7 +155,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="1351,3513" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap:VirtualizedContainerService.HintSize="1158,3477" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <Sequence.Variables>
         <Variable x:TypeArguments="ui:QueueItem" Name="itemFila" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_lista_logradouros" />
@@ -163,14 +163,16 @@
         <Variable x:TypeArguments="x:String" Name="local_extraido_google_search" />
         <Variable x:TypeArguments="x:String" Name="endereco" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_nao_encontrados" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dt_encontrados" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BuildDataTable DataTable="[dt_nao_encontrados]" DisplayName="Data Table Nao encontrados" sap:VirtualizedContainerService.HintSize="1317,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;COLABORADOR&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ENDERECO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TURNO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;STATUS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PROCESSADO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;  &lt;TableName&gt;&#xA;    &lt;COLABORADOR&gt;Pedro&lt;/COLABORADOR&gt;&#xA;    &lt;ENDERECO&gt;Rua ABC&lt;/ENDERECO&gt;&#xA;    &lt;TURNO&gt;1&lt;/TURNO&gt;&#xA;    &lt;STATUS&gt;A PROCESSAR&lt;/STATUS&gt;&#xA;  &lt;/TableName&gt;&#xA;&lt;/NewDataSet&gt;" />
-      <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="1317,636" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+      <ui:BuildDataTable DataTable="[dt_encontrados]" DisplayName="Data Table Encontrados" sap:VirtualizedContainerService.HintSize="1124,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;COLABORADOR&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ENDERECO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;TURNO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;STATUS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PROCESSADO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+      <ui:BuildDataTable DataTable="[dt_nao_encontrados]" DisplayName="Data Table Nao encontrados" sap:VirtualizedContainerService.HintSize="1124,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_3" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;COLABORADOR&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ENDERECO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TURNO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;STATUS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;PROCESSADO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+      <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="1124,636" sap2010:WorkflowViewState.IdRef="SequenceX_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -194,19 +196,19 @@
           </ueab:ExcelApplicationCard.Body>
         </ueab:ExcelApplicationCard>
       </ueab:SequenceX>
-      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[LastRowIndex]" DataTable="[dt_lista_logradouros]" DisplayName="Faz o looping no Data Table" sap:VirtualizedContainerService.HintSize="1317,2702" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[LastRowIndex]" DataTable="[dt_lista_logradouros]" DisplayName="Faz o looping no Data Table" sap:VirtualizedContainerService.HintSize="1124,2574" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1283,2515" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1090,2387" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Define as variáveis necessárias" sap:VirtualizedContainerService.HintSize="1249,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign DisplayName="Define as variáveis necessárias" sap:VirtualizedContainerService.HintSize="1056,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -220,24 +222,24 @@
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o navegador Firefox na pagina google.com" sap:VirtualizedContainerService.HintSize="1249,2307" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="5a72ad25-caae-47a1-b6d3-6f35d6733105" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Abre o navegador Firefox na pagina google.com" sap:VirtualizedContainerService.HintSize="1056,1475" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="5a72ad25-caae-47a1-b6d3-6f35d6733105" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1215,2067" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1022,1226" sap2010:WorkflowViewState.IdRef="Sequence_16">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DisplayName="Insere o endereço no campo de busca" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1181,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="5a72ad25-caae-47a1-b6d3-6f35d6733105" Text="[endereco]" Version="V4">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DisplayName="Insere o endereço no campo de busca" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="988,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="5a72ad25-caae-47a1-b6d3-6f35d6733105" Text="[endereco]" Version="V4">
                         <uix:NTypeInto.Target>
-                          <uix:TargetAnchorable BrowserURL="https://www.google.com/" CVScreenId="b014bba4-150d-4a5b-8df9-9195ae7f391f" CvElementArea="674, 495, 582, 51" CvType="InputBox" DesignTimeRectangle="724, 498, 403, 46" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='APjFqb' tag='TEXTAREA' type='' class='gLFyf' aaname='Pesquisar' /&gt;" Guid="177f9942-f639-4f9b-b0a8-a3c4506e04c3" InformativeScreenshot="cc27e06d7ec064cac2acae7e1e0b38ee.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable BrowserURL="https://www.google.com.br/maps/@-20.494198,-43.1982388,13z?hl=pt-BR&amp;entry=ttu&amp;g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D" CVScreenId="b461ed3a-f76a-464d-90b6-bdd0fb940d96" CvTextArea="119, 149, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="120, 144, 246, 24" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' /&gt;" FuzzyAccuracy="0.96" FuzzySelectorArgument="&lt;webctrl id='searchboxinput' tag='INPUT' type='' class='fontBodyMedium searchboxinput xiQnY ' aaname='Pesquise no Google Maps' /&gt;" Guid="66b1551e-3cdc-484d-abb6-f14ef9eb987d" InformativeScreenshot="68f297100957fd125a6fca3f612a0e77.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Google Maps' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
-                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CVScreenId="b014bba4-150d-4a5b-8df9-9195ae7f391f" CvElementArea="821, 571, 146, 40" CvTextArea="839, 585, 110, 16" CvTextArgument="Pesquisa Google" CvType="Button" DesignTimeRectangle="823, 574, 142, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' class='gNO89b' tag='INPUT' type='submit' aaname='Pesquisa Google' check:text='Pesquisa Google' /&gt;" Guid="7f917069-1634-4c50-a452-14378baa806a" SearchSteps="FuzzySelector, CV" />
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target CVScreenId="b461ed3a-f76a-464d-90b6-bdd0fb940d96" CvTextArea="119, 149, 168, 17" CvTextArgument="Pesquise no Google Maps" CvType="Text" DesignTimeRectangle="120, 144, 246, 26" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='z1Srse fontBodyMedium' aaname='Pesquise no Google Maps' check:innerText='Pesquise no Google Maps' /&gt;" Guid="879a576f-a662-459f-9300-57e5087f1088" SearchSteps="FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -253,9 +255,15 @@
                           </uix:VerifyExecutionTypeIntoOptions>
                         </uix:NTypeInto.VerifyOptions>
                       </uix:NTypeInto>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Clica no botão Pesquisar" sap:VirtualizedContainerService.HintSize="1181,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a72ad25-caae-47a1-b6d3-6f35d6733105" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Clica no botão Pesquisar" sap:VirtualizedContainerService.HintSize="988,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5a72ad25-caae-47a1-b6d3-6f35d6733105" Version="V4">
                         <uix:NClick.Target>
-                          <uix:TargetAnchorable BrowserURL="https://www.google.com/" CVScreenId="9120ab23-0cef-4b6e-b935-710252ca664d" CvElementArea="821, 571, 146, 40" CvTextArea="839, 585, 110, 16" CvTextArgument="Pesquisa Google" CvType="Button" DesignTimeRectangle="823, 574, 142, 36" DesignTimeScaleFactor="1" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' class='gNO89b' tag='INPUT' type='submit' aaname='Pesquisa Google' check:text='Pesquisa Google' /&gt;" Guid="45c50791-faa5-4341-819a-4fa06c15ac62" InformativeScreenshot="aaed3741758393f7ef03b9ab5422ee8b.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                          <uix:TargetAnchorable BrowserURL="https://www.google.com.br/maps/@-19.9476913,-44.1359315,17z?hl=pt-BR&amp;entry=ttu&amp;g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D" DesignTimeRectangle="382, 145, 24, 24" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='searchbox-searchbutton' tag='SPAN' type='' class='google-symbols' aaname='' check:innerText='' /&gt;" Guid="6788a78c-5829-4fa1-9dbe-456d1123555d" InformativeScreenshot="8269a32bd24064c3c6f4dd1dc0ab519b.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Google Maps' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="433, 145, 24, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='hArJGc' tag='SPAN' type='' class='google-symbols NhBTye G47vBd' aaname='' check:innerText='' /&gt;" Guid="d5a75ca3-229b-4e81-af72-328b12964ddb" SearchSteps="FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
                         </uix:NClick.Target>
                         <uix:NClick.VerifyOptions>
                           <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -268,127 +276,45 @@
                           </uix:VerifyExecutionOptions>
                         </uix:NClick.VerifyOptions>
                       </uix:NClick>
-                      <uix:NCheckState DisplayName="Check App State 'DIV'" sap:VirtualizedContainerService.HintSize="1181,1494" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5a72ad25-caae-47a1-b6d3-6f35d6733105" Timeout="1" Version="V4">
+                      <uix:NCheckState DisplayName="Check App State 'DIV'" sap:VirtualizedContainerService.HintSize="988,653" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Timeout="0" Version="V4">
                         <uix:NCheckState.IfExists>
-                          <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="513,623" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                          <Sequence sap:VirtualizedContainerService.HintSize="484,413" sap2010:WorkflowViewState.IdRef="Sequence_36">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NGetText DelayAfter="1" DisplayName="Pega o endereço do Google Search" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="5a72ad25-caae-47a1-b6d3-6f35d6733105" TextString="[local_extraido_google_search]" Version="V4">
-                              <uix:NGetText.Target>
-                                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=av.+amazonas+674+-+centro+betim+-+mg&amp;sca_esv=06bab1e14273c3d0&amp;sxsrf=ADLYWIIOhoaIyu8br2O2Ivd34KsWinUeVw%3A1733317066489&amp;source=hp&amp;ei=ylFQZ4DpG4_K1sQPxYKY8QI&amp;iflsig=AL9hbdgAAAAAZ1Bf2kw6O30WFJw64fotAlm0eZF01UZ2&amp;oq=endereco_extraido_google_search&amp;gs_lp=Egdnd3Mtd2l6Ih9lbmRlcmVjb19leHRyYWlkb19nb29nbGVfc2VhcmNoKgIIADIIEAAYgAQYogQyCBAAGIAEGKIEMggQABiABBiiBEitF1DzBljzBnABeACQAQCYAdIBoAHSAaoBAzItMbgBAcgBAPgBAvgBAZgCAqAC3wGoAgrCAgcQIxgnGOoCmAMJkgcFMS4wLjGgB7wC&amp;sclient=gws-wiz" CVScreenId="a6dd91a9-f8a6-4f44-a0df-b2f746c1d7d9" CvTextArea="236, 641, 250, 19" CvType="AnyWordGroup" DesignTimeRectangle="238, 641, 247, 25" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='aiAXrc' parentid='rso' tag='DIV' type='' /&gt;" Guid="9a0aeaa6-817f-45a9-8125-2f88b86468de" InformativeScreenshot="4557f5e9c6b639ba6eb4cf91d93f5d49.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='av. amazonas 674 - centro betim - mg - Pesquisa Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                  <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                      <uix:Target CVScreenId="a6dd91a9-f8a6-4f44-a0df-b2f746c1d7d9" CvElementArea="751, 633, 49, 47" CvType="Icon" DesignTimeRectangle="753, 635, 44, 44" FuzzySelectorArgument="&lt;webctrl type='' parentid='rso' tag='DIV' class='niO4u' aaname='' /&gt;" Guid="5ef081bf-8c4b-4ec9-9fc5-1f2e27ab74e9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARsSURBVGhD7ZrpThRBFIV9E3pgGBAEZAkqIopxfQN/+w7GLS5xYcflAYzGBGLcRXFBH8XEJSohimjADSLX+qrppmhqZnq6m9FO/HEyPbXcOqfqLtWTWVdRUSFpxn8BIJPJSF19vbS0tUpH51bp6t4hO3fvkl1792jwTBt9jGEsc2y2SkUsARDZ3LFFk+zo7JTm1hbdlq3OipNx/HE800YfYxjLHObSZtosFZEEbGhokG07tsvWrm3S2NS4gmxYMIe52MAWNm3jiqEkAblcTrsBi8bdORPYwia2WcM2Jh9CC2hsatLH3rRxo7U/CWCbNVjL1m9DKAEEHsecq6mx9icJ1mAt1rT1B1FUQFt7uw66KH4eFazFmqxt6zdRUICbFjutfeUAaxc7ibwC8EOOspw7HwRrw6FQTFgFkAkIpnL4fDHAQXPJk52sAkhna5ltSgVc4GTrWyWAgkJODrb/bcDJVuxWCcDn4hQpx3HvOOtbuuXo9fcaPJt9UQAnuAXbVwjwKqLZVgo8grXNXXLoyku58Oy3Bs+0mWOiwHYDWCGAyxX3E7MtLJbJb5fD117L5RcivffnNHimjT5zbKmAGxzNNl8A11uiPUraXEH+6iu59BzyszLw6KdGj3q+NKFEXI0nAm5wNK/ivgCOJkrRKka+/+EPGRz/Jf1j3+XixGJsEXA03cgXQMXjru59DwM7+TlNGvQp0og4f/ernLgxLUPj8zom4rgTHM3q7AsgzwYDpBCcTKX+NMn33HN3fujxgsYghJXrnLkxKS3dB+T46JQMP7GIWLIVBq6nLNcEXwCvfLw1ed/DgMwCEZ+8cpW+sR9y7vYnOX9nWn/23P0ip0ff6fENm/bLyZuflYgF152uvdE2gnYLAY5w9b77AnhvLSWA61p36vRIhul7MCcDuIzCpn0HJZurk6rq9VKVrdGozOZU4FW589p2y7GRSRlUJ4VwbGAraD8fHMfRXL3vvgCi23sOgyOqQF14tuj7PC5z9tZHyVS6RCFdVZ1PwAcZVuN7lXBsYMu0XQwm18QE4O+4TTbHztfKqZG3yn1mVADPBFxoWqXURXVq35IVEMeFeh/M6hPA5x210+w2xIefUomNIB6Z0r7fC/mlApeYC8UN4n4VvJxAbX2zBmIIak7HS6Pstt55RZ45biZKKIjjpVFXBMTO3Sb7TGviXiFDyNDjeV0XfPIq9SaaRpMqZJwE7uSTX/oEVOhV5JMqZK6yhK8SS8R5ToI8yHuVWMvLXFLkC17mQKqv04CjSfULDUj1KyVI/Us9IM+m9mcVkPoftkCqf1r0QMWLUtySAmubVdeGggIAP3FjqJwnwVqsydq2fhNFBQB2gaMsR0ywBmsV23kPoQQA/JBgWsvshG3WKOTzQYQWAMgEpDNbRYwD7waA7XzZJh9KEuCBgsIxsyj3kyjxwRzmYgNbtiIVBpEEeGDnuFxx7AQdd3XaeGsyRfFMG32MYSxzmBv3JGMJ8MD1FiJu2k3RXw3+BaRcQIX8Abvf2ePvyqdAAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
-                                    </scg:List>
-                                  </uix:TargetAnchorable.Anchors>
-                                </uix:TargetAnchorable>
-                              </uix:NGetText.Target>
-                            </uix:NGetText>
-                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
-                              <ui:MultipleAssign.AssignOperations>
-                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
-                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
-                                    <ui:AssignOperation.To>
-                                      <OutArgument x:TypeArguments="x:String">[out_endereco]</OutArgument>
-                                    </ui:AssignOperation.To>
-                                    <ui:AssignOperation.Value>
-                                      <InArgument x:TypeArguments="x:String">[local_extraido_google_search]</InArgument>
-                                    </ui:AssignOperation.Value>
-                                  </ui:AssignOperation>
-                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
-                                    <ui:AssignOperation.To>
-                                      <OutArgument x:TypeArguments="x:String">[out_colaborador]</OutArgument>
-                                    </ui:AssignOperation.To>
-                                    <ui:AssignOperation.Value>
-                                      <InArgument x:TypeArguments="x:String">[CurrentRow.item(0).ToString]</InArgument>
-                                    </ui:AssignOperation.Value>
-                                  </ui:AssignOperation>
-                                </scg:List>
-                              </ui:MultipleAssign.AssignOperations>
-                            </ui:MultipleAssign>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="busca_google_search - Invoke Workflow File (busca_google_search.xaml)" sap:VirtualizedContainerService.HintSize="479,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="busca_google_search.xaml">
-                              <ui:InvokeWorkflowFile.Arguments>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_endereco">[out_endereco]</InArgument>
-                                <InArgument x:TypeArguments="x:String" x:Key="in_colaborador">[out_colaborador]</InArgument>
-                              </ui:InvokeWorkflowFile.Arguments>
-                            </ui:InvokeWorkflowFile>
+                            <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="450,351" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow.Item(0), CurrentRow.Item(1), CurrentRow.item(2), CurrentRow.Item(3)}]" DataTable="[dt_encontrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                              <ui:Continue sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="Continue_6" />
+                            </Sequence>
                           </Sequence>
                         </uix:NCheckState.IfExists>
                         <uix:NCheckState.IfNotExists>
-                          <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="614,1252" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="450,326" sap2010:WorkflowViewState.IdRef="Sequence_33">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="nao_encontrado" />
-                              <Variable x:TypeArguments="x:String" Name="endereco_nao_encontrado" />
+                              <Variable x:TypeArguments="sd:DataRow" Name="endereco_nao_encontrado" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Assign sap:VirtualizedContainerService.HintSize="580,114" sap2010:WorkflowViewState.IdRef="Assign_1">
-                              <Assign.To>
-                                <OutArgument x:TypeArguments="x:String">[endereco_nao_encontrado]</OutArgument>
-                              </Assign.To>
-                              <Assign.Value>
-                                <InArgument x:TypeArguments="x:String">[CurrentRow.item(0).ToString]</InArgument>
-                              </Assign.Value>
-                            </Assign>
-                            <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="580,1028" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
-                              <ueab:ExcelProcessScopeX.Body>
-                                <ActivityAction x:TypeArguments="ui:IExcelProcess">
-                                  <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-                                  </ActivityAction.Argument>
-                                  <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="546,909" sap2010:WorkflowViewState.IdRef="Sequence_22">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="512,849" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="Nao_Encontrados.xlsx">
-                                      <ueab:ExcelApplicationCard.Body>
-                                        <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                                          <ActivityAction.Argument>
-                                            <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                                          </ActivityAction.Argument>
-                                          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="478,557" sap2010:WorkflowViewState.IdRef="Sequence_23">
-                                            <Sequence.Variables>
-                                              <Variable x:TypeArguments="x:String" Name="firstEmptyRow" />
-                                            </Sequence.Variables>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,201" sap2010:WorkflowViewState.IdRef="ReadRangeX_3" Range="[Excel.Sheet(&quot;Plan1&quot;)]" SaveTo="[dt_nao_encontrados]" />
-                                            <Assign sap:VirtualizedContainerService.HintSize="444,114" sap2010:WorkflowViewState.IdRef="Assign_2">
-                                              <Assign.To>
-                                                <OutArgument x:TypeArguments="x:String">[firstEmptyRow]</OutArgument>
-                                              </Assign.To>
-                                              <Assign.Value>
-                                                <InArgument x:TypeArguments="x:String">[(dt_nao_encontrados.Rows.Count + 1).ToString()]</InArgument>
-                                              </Assign.Value>
-                                            </Assign>
-                                            <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.SelectedSheet.Cell(&quot;A&quot; &amp; firstEmptyRow)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="444,182" sap2010:WorkflowViewState.IdRef="WriteCellX_3" Value="[endereco_nao_encontrado]" />
-                                          </Sequence>
-                                        </ActivityAction>
-                                      </ueab:ExcelApplicationCard.Body>
-                                    </ueab:ExcelApplicationCard>
-                                  </Sequence>
-                                </ActivityAction>
-                              </ueab:ExcelProcessScopeX.Body>
-                            </ueab:ExcelProcessScopeX>
-                            <ui:Continue sap:VirtualizedContainerService.HintSize="580,50" sap2010:WorkflowViewState.IdRef="Continue_2" />
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{CurrentRow.Item(0), CurrentRow.Item(1), CurrentRow.item(2), CurrentRow.Item(3)}]" DataTable="[dt_nao_encontrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                            <ui:Continue sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Continue_5" />
                           </Sequence>
                         </uix:NCheckState.IfNotExists>
                         <uix:NCheckState.Target>
-                          <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=avenida+rio+negro%2C+683+-+dom.+bosco&amp;sca_esv=e328ce4ff02095a0&amp;sxsrf=ADLYWILjmG_U9t_xk8HOXlN8b6JMNZNlqw%3A1733402940536&amp;source=hp&amp;ei=PKFRZ-6DHqzN1sQPnfn8eA&amp;iflsig=AL9hbdgAAAAAZ1GvTN7DWPobfLnYIDzebE2d7OJIsWOg&amp;ved=0ahUKEwjukZWU1ZCKAxWsppUCHZ08Hw8Q4dUDCB4&amp;oq=&amp;gs_lp=Egdnd3Mtd2l6IgAqAggAMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCMgcQIxgnGOoCSKwHUABYAHABeACQAQCYAQCgAQCqAQC4AQHIAQCYAgGgAguoAgqYAwvxBRqUEgNr9etvkgcBMaAHAA&amp;sclient=gws-wiz" CVScreenId="baf33de0-1750-414c-bed9-ae6e485a623e" CvElementArea="751, 633, 48, 47" CvType="Icon" DesignTimeRectangle="748, 623, 142, 82" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' parentid='rso' tag='DIV' class='niO4u' aaname='' /&gt;" Guid="20e7faa3-02af-4f8d-ad55-85f1a41b8098" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARtSURBVGhD7Zp5TxNBGMb9JrRQCoJQKcQDEcSIxzfwb7+D8YpHlFMO9QMYjQmGeKB4Xx/FxCMqIYpowDvyOr9ZdhmWabvdXaqb+MeTbud453lm3mO26bqqqipJMv4LAOl0WhoaGyXf1irtHduks3uH7OzZJbv27NbgmTb6GMNY5thslYtIAiCypX2rJtne0SEtrXndlqnNSCqd8sbxTBt9jGEsc5hLm2mzXIQSsKGpSbbv6JJtndulOde8gmxQMIe52MAWNm3jSqEsAdlsVrsBi0bdORPYwia2WcM2phACC2jO5fSx5zZutPbHAWyzBmvZ+m0IJIDA45izdXXW/jjBGqzFmrZ+P0oKaNu0SQddGD8PC9ZiTda29ZsoKsBJix3WvkqAtUudREEB+CFHWcmd94O14VAsJqwCyAQEUyV8vhTgoLkUyE5WAaSztcw25QIucLL1rRJAQSEn+9v/NuBkK3arBOBzUYpUKuXccdbnu+XIlbcaPJt9YQAnuPnbVwhwK6LZVg5cgvUtnXLw4nMZe/xbg2fazDFhYLsBrBDA5Yr7idkWFMvku+TQ5Zdy4ZnIwO0FDZ5po88cWy7gBkezzRPA9ZZoD5M2V5C/9ELOP4X8vJy9912jXz2ff6JEXIomAm5wNK/ingCOJkzRKkV+6O43Gb7/Q4bufJVzTxYji4Cj6UaeACoed3X3exDYyS9o0mBQkUZE3+RnOT4xKyP3f+qYiOJOcDSrsyeAPOsPkGJIpav1p0m+/5az8yMPfmkMQ1i5zumJacl375djV2dk9KFFxJKtIHA8ZbkmeAJ45eOtyf0eBGQWiHjklasM3vkmvTc+SN/NWf3ZP/lJTl19o8c3bd4nJ659VCJ+Oe50+ZW24bdbDHCEq/vdE8B7azkB3NC6U6dHMszg1IKcxWUUNu89IJlsg9TUrpeaTJ1GdSarAq/GmdfWI0fHp2VYnRTCsYEtv/1CgCNc3e+eAKLbfQ6Cw6pAjT1e9Hwelzlz/b2kqx2ikK6pLSTgnYyq8QNKODawZdouBZNrbALwd9wmk2Xn6+Xk+GvlPnMqgOd8LjSrUuqiOrUv8QqI4kIDU/P6BPD5lNppdhvio4+oxEYQj89o3x+A/FKBi82FogbxkApeTqC+sUUDMQQ1p+OmUXZb77wizxwnE8UUxNHSqCMCYr03yD6zmrhbyBAy8uCnrgseeZV6Y02jcRUyTgJ38sgvfQIq9CrycRUyR1nMV4kl4jzHQR4UvEqs5WUuLvJwg6P1MgcSfZ0GHE2iX2hAol8pQeJf6gF5NrE/q4DE/7AFEv3TogsqXpjiFhdY26y6NhQVAPiJG0OVPAnWYk3WtvWbKCkAsAscZSVigjVYq9TOuwgkAOCHBNNaZidss0Yxn/cjsABAJiCd2SpiFLg3AGwXyjaFUJYAFxQUjplFuZ+EiQ/mMBcb2LIVqSAIJcAFO8flimMn6Lir08ZbkymKZ9roYwxjmcPcqCcZSYALrrcQcdJugv5q8C8g4QKq5A/fbNnlxBHbfQAAAABJRU5ErkJggg==" InformativeScreenshot="62df0fc6be98bd17fbe996e95e10f680.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='avenida rio negro, 683 - dom. bosco - Pesquisa Google' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                          <uix:TargetAnchorable BrowserURL="https://www.google.com.br/maps/place/R.+Arg%C3%A9lia,+178+-+Petrovale,+Betim+-+MG,+32668-078/@-19.9909265,-44.1110694,17z/data=!3m1!4b1!4m5!3m4!1s0xa6c0bdb38be35f:0x7ae8c47354498096!8m2!3d-19.9909316!4d-44.1084945?hl=pt-BR&amp;entry=ttu&amp;g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D" CVScreenId="ee520fe7-bef5-45f4-a2da-5104479ca602" CvTextArea="103, 381, 248, 20" CvTextArgument="R. Argélia, 178 - Petrovale" CvType="Text" DesignTimeRectangle="80, 361, 408, 60" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='lMbq3e' tag='DIV' aaname='' check:innerText='R. Argélia, 178 - Petrovale' /&gt;" Guid="b72083be-0f47-4afd-abdf-32333dbcbfa5" InformativeScreenshot="7fa363cf8556c06863c71b1a521ec071.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='R. Argélia, 178 - Petrovale - Google Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target DesignTimeRectangle="238, 285, 650, 338" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl parentid='lu_map' tag='IMG' type='' class='YQ4gaf' aaname='Mapa de Av. Rio Negro, 683 - Dom Bosco, Betim - MG, 32676-275' /&gt;" Guid="8d8a5ccb-85a4-4381-a8b0-2c21786392d2" SearchSteps="FuzzySelector" />
+                                <uix:Target CVScreenId="ee520fe7-bef5-45f4-a2da-5104479ca602" CvElementArea="117, 434, 41, 42" CvType="Icon" DesignTimeRectangle="120, 438, 36, 36" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='DVeyrd ' aaname='' check:innerText='' /&gt;" Guid="5c367bed-4636-4ac0-998f-5aea89631ac6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIkSURBVFhH3Zi9TsMwFIV5j25MvADMPAkbaxkKG4IFiUdASMwwsLAhhDoydkAVCwMMDEhlgVDRCkqNj12njnOd+CetLI50lNLca3+Kc31dVlji+r+At/0ftn02YhuHQ7baGbLWzidrtWfmn/Ed7iEGsaHyBuycj9jaHoC429kcymoew2ORg1xfOQMeXY3lkyIh3I0xMJarnAA3j7/IyWKMMV1UCdh/+ZXL6bSUvs7E2JijSlZAJDaxpHXGHFWQVkD55OhBmzbmsokElO/cIpbV5sz6TpYAUWH0IIs3Vd0lwGW8dzZjblMFQGykVKKPt07jxjA38wJgTGGsHwzZ00BWI674m4qrs1kwOSD6pWxfdGKVdTilYEjOoPfuHBBNPaRyKTilMMhMsCjlgDh50Al2V8EphUCCRSkH9K3eKrgbvkQT7ZYvpF7NOWDhPFdjCg7tqvc8Ed6/HLPdi3E4JGdRmgNSgRbfPU5mWVKDjykZ130oxiGPiqOs1CggrtBJ95td35dP0XGAEUv8lk3FBo0r9Pour7qil7jJIjHlBcdNFkny20zyG3XyrQ5K+rAAJX/cgnyruUnr1atUAkz+yA8l/aNJKaZgfG0Whi4rYPI/3CEkyieZ4L8+dMl3kpok3LZ3zpQTIIQKa2LJMQZVrTY5AyphIxXLLtqiy9LzGB6LHHMTdpE3oBL6JZo6Th7iyernSf4Z3+EeYvTe6qtgwGUpcUDG/gDwcX/H22nKggAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
@@ -398,9 +324,60 @@
                   </ActivityAction>
                 </uix:NApplicationCard.Body>
                 <uix:NApplicationCard.TargetApp>
-                  <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Firefox" IconBase64="AAABAAIAEBAAAAEAIABoBAAAJgAAACAgAAABACAAqBAAAI4EAAAoAAAAEAAAACAAAAABACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///zD9/f2W/f392P39/fn9/f35/f391/39/ZT+/v4uAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v7+Cf39/Zn///////////////////////////////////////////39/ZX///8IAAAAAAAAAAAAAAAA/v7+Cf39/cH/////+v35/7TZp/92ul3/WKs6/1iqOv9yuFn/rNWd//j79v///////f39v////wgAAAAAAAAAAP39/Zn/////7PXp/3G3WP9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP+Or1j//vDo///////9/f2VAAAAAP///zD/////+vz5/3G3V/9TqDT/WKo6/6LQkf/U6cz/1urO/6rUm/+Zo0r/8IZB//adZ////v7///////7+/i79/f2Y/////4nWzf9Lqkj/Vqo4/9Xqzv///////////////////////ebY//SHRv/0hUL//NjD///////9/f2U/f392v////8sxPH/Ebzt/43RsP/////////////////////////////////4roL/9IVC//i1jf///////f391/39/fr/////Cr37/wW8+/+16/7/////////////////9IVC//SFQv/0hUL/9IVC//SFQv/3pnX///////39/fn9/f36/////wu++/8FvPv/tuz+//////////////////SFQv/0hUL/9IVC//SFQv/0hUL/96p7///////9/f35/f392/////81yfz/CrL5/2uk9v///////////////////////////////////////////////////////f392P39/Zn/////ks/7/zdS7P84Rur/0NT6///////////////////////9/f////////////////////////39/Zb+/v4y//////n5/v9WYu3/NUPq/ztJ6/+VnPT/z9L6/9HU+v+WnfT/Ul7t/+Hj/P////////////////////8wAAAAAP39/Z3/////6Or9/1hj7v81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v9sdvD////////////9/f2YAAAAAAAAAAD///8K/f39w//////5+f7/paz2/11p7v88Suv/Okfq/1pm7v+iqfX/+fn+///////9/f3B/v7+CQAAAAAAAAAAAAAAAP///wr9/f2d///////////////////////////////////////////9/f2Z/v7+CQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/jL9/f2Z/f392/39/fr9/f36/f392v39/Zj///8wAAAAAAAAAAAAAAAAAAAAAPAPAADAAwAAgAEAAIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAwAMAAPAPAAAoAAAAIAAAAEAAAAABACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/g3+/v5X/f39mf39/cj9/f3q/f39+f39/fn9/f3q/f39yP39/Zn+/v5W////DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/iT9/f2c/f399f/////////////////////////////////////////////////////9/f31/f39mv7+/iMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/gn9/f2K/f39+////////////////////////////////////////////////////////////////////////////f39+v39/Yf///8IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/v4k/f390v////////////////////////////////////////////////////////////////////////////////////////////////39/dD///8iAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////MP39/er//////////////////////////+r05v+v16H/gsBs/2WxSf9Wqjj/Vqk3/2OwRv99vWX/pdKV/97u2P////////////////////////////39/ej+/v4vAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/iT9/f3q/////////////////////+v15/+Pxnv/VKk2/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/36+Z//d7tf///////////////////////39/ej///8iAAAAAAAAAAAAAAAAAAAAAAAAAAD///8K/f390//////////////////////E4bn/XKw+/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/1apN/+x0pv///////////////////////39/dD///8IAAAAAAAAAAAAAAAAAAAAAP39/Yv/////////////////////sdij/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP9TqDT/YKU1/8qOPv/5wZ////////////////////////39/YcAAAAAAAAAAAAAAAD+/v4l/f39+////////////////8Lgt/9TqDT/U6g0/1OoNP9TqDT/U6g0/1OoNP9utlT/n86N/7faqv+426v/pdKV/3u8ZP9UqDX/U6g0/3egN//jiUH/9IVC//SFQv/82MP//////////////////f39+v7+/iMAAAAAAAAAAP39/Z3////////////////q9Ob/W6w+/1OoNP9TqDT/U6g0/1OoNP9nskz/zOXC/////////////////////////////////+Dv2v+osWP/8YVC//SFQv/0hUL/9IVC//WQVP/++fb//////////////////f39mgAAAAD+/v4O/f399v///////////////4LHj/9TqDT/U6g0/1OoNP9TqDT/dblc//L58P/////////////////////////////////////////////8+v/3p3f/9IVC//SFQv/0hUL/9IVC//rIqf/////////////////9/f31////DP7+/ln////////////////f9v7/Cbz2/zOwhv9TqDT/U6g0/2KwRv/v9+z///////////////////////////////////////////////////////738//1kFT/9IVC//SFQv/0hUL/9plg///////////////////////+/v5W/f39nP///////////////4jf/f8FvPv/Bbz7/yG1s/9QqDz/vN2w//////////////////////////////////////////////////////////////////rHqP/0hUL/9IVC//SFQv/0hUL//vDn//////////////////39/Zn9/f3L////////////////R878/wW8+/8FvPv/Bbz7/y7C5P/7/fr//////////////////////////////////////////////////////////////////ere//SFQv/0hUL/9IVC//SFQv/718H//////////////////f39yP39/ez///////////////8cwvv/Bbz7/wW8+/8FvPv/WNL8///////////////////////////////////////0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//rIqv/////////////////9/f3q/f39+v///////////////we9+/8FvPv/Bbz7/wW8+/993P3///////////////////////////////////////SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/+cGf//////////////////39/fn9/f36////////////////B737/wW8+/8FvPv/Bbz7/33c/f//////////////////////////////////////9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/6xaX//////////////////f39+f39/e3///////////////8cwvv/Bbz7/wW8+/8FvPv/WdP8///////////////////////////////////////0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//SFQv/0hUL/9IVC//vVv//////////////////9/f3q/f39y////////////////0bN/P8FvPv/Bbz7/wW8+/8hrvn/+/v///////////////////////////////////////////////////////////////////////////////////////////////////////////////////39/cj9/f2c////////////////ht/9/wW8+/8FvPv/FZP1/zRJ6/+zuPf//////////////////////////////////////////////////////////////////////////////////////////////////////////////////f39mf7+/lr////////////////d9v7/B7n7/yB38f81Q+r/NUPq/0hV7P/u8P3////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v5X////D/39/ff///////////////9tkPT/NUPq/zVD6v81Q+r/NUPq/2Fs7//y8v7////////////////////////////////////////////09f7//////////////////////////////////////////////////f399f7+/g0AAAAA/f39n////////////////+Tm/P89Suv/NUPq/zVD6v81Q+r/NUPq/1Bc7f/IzPn/////////////////////////////////x8v5/0xY7P+MlPP////////////////////////////////////////////9/f2cAAAAAAAAAAD+/v4n/f39/P///////////////7W69/81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v9ZZe7/k5v0/6609/+vtff/lJv0/1pm7v81Q+r/NUPq/zVD6v+GjvL//v7//////////////////////////////f39+/7+/iQAAAAAAAAAAAAAAAD9/f2N/////////////////////6Cn9f81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v+BivL////////////////////////////9/f2KAAAAAAAAAAAAAAAAAAAAAP7+/gv9/f3V/////////////////////7W69/8+S+v/NUPq/zVD6v81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v81Q+r/P0zr/7q/+P///////////////////////f390v7+/gkAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/ib9/f3r/////////////////////+Xn/P94gfH/NkTq/zVD6v81Q+r/NUPq/zVD6v81Q+r/NUPq/zVD6v81Q+r/NkTq/3Z/8f/l5/z///////////////////////39/er+/v4kAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/jL9/f3r///////////////////////////k5vz/nqX1/2p08P9IVez/OEbq/zdF6v9GU+z/aHLv/5qh9f/i5Pz////////////////////////////9/f3q////MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP7+/ib9/f3V/////////////////////////////////////////////////////////////////////////////////////////////////f390v7+/iQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wr9/f2N/f39/P///////////////////////////////////////////////////////////////////////////f39+/39/Yv+/v4JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+/v4n/f39n/39/ff//////////////////////////////////////////////////////f399v39/Z3+/v4lAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/v7+Dv7+/lr9/f2c/f39y/39/e39/f36/f39+v39/ez9/f3L/f39nP7+/ln+/v4OAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP/AA///AAD//AAAP/gAAB/wAAAP4AAAB8AAAAPAAAADgAAAAYAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAABgAAAAcAAAAPAAAAD4AAAB/AAAA/4AAAf/AAAP/8AAP//wAP/" InformativeScreenshot="8d446e2e555dc6a7bd37da0178adf2b0.png" Selector="&lt;html app='firefox.exe' title='Google' /&gt;" Title="Google" Url="https://www.google.com/" />
+                  <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Firefox" IconBase64="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" InformativeScreenshot="35664858f038b112383bdc04c421d41c.png" Selector="&lt;html app='firefox.exe' title='Google Maps' /&gt;" Title="Google" Url="https://www.google.com.br/maps/@-20.494198,-43.1982388,13.75z?hl=pt-BR&amp;entry=ttu&amp;g_ep=EgoyMDI0MTIwMy4wIKXMDSoASAFQAw%3D%3D" />
                 </uix:NApplicationCard.TargetApp>
               </uix:NApplicationCard>
+              <Sequence sap:VirtualizedContainerService.HintSize="1056,704" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_encontrados]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="547,621" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="513,434" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                          <ui:MultipleAssign.AssignOperations>
+                            <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:String">[out_endereco]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:String">[CurrentRow("ENDERECO").ToString()]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                <ui:AssignOperation.To>
+                                  <OutArgument x:TypeArguments="x:String">[out_colaborador]</OutArgument>
+                                </ui:AssignOperation.To>
+                                <ui:AssignOperation.Value>
+                                  <InArgument x:TypeArguments="x:String">[CurrentRow("COLABORADOR").ToString()]</InArgument>
+                                </ui:AssignOperation.Value>
+                              </ui:AssignOperation>
+                            </scg:List>
+                          </ui:MultipleAssign.AssignOperations>
+                        </ui:MultipleAssign>
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="busca_google_search - Invoke Workflow File (busca_google_search.xaml)" sap:VirtualizedContainerService.HintSize="479,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="busca_google_search.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_endereco">[out_endereco]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_colaborador">[out_colaborador]</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
             </Sequence>
           </ActivityAction>
         </ui:ForEachRow.Body>
