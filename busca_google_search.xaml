@@ -104,13 +104,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1530,2689" sap2010:WorkflowViewState.IdRef="Sequence_3">
+  <Sequence sap:VirtualizedContainerService.HintSize="1156,2696.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="buscagooglesearch" sap:VirtualizedContainerService.HintSize="581,2666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence DisplayName="buscagooglesearch" sap:VirtualizedContainerService.HintSize="579.2,2673.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="local_google_search" />
         <Variable x:TypeArguments="x:String" Name="local_extraido_google_search" />
@@ -122,19 +122,19 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Firefox: Roteamento - Google My Maps" sap:VirtualizedContainerService.HintSize="547,2583" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Browser Firefox: Roteamento - Google My Maps" sap:VirtualizedContainerService.HintSize="545.6,2590.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="513,2343" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="512,2350.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
                 <ui:MultipleAssign.AssignOperations>
                   <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                     <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -156,7 +156,7 @@
                   </scg:List>
                 </ui:MultipleAssign.AssignOperations>
               </ui:MultipleAssign>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'INPUT mapsprosearch-fie…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Text="[endereco]" Version="V4">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'INPUT mapsprosearch-fie…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="478.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Text="[endereco]" Version="V4">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.954978170539974%2C-44.0568955&amp;z=13" CVScreenId="fc725692-29e4-4a73-8f63-b7a197e10f82" CvElementArea="354, 143, 403, 36" CvType="InputBox" DesignTimeRectangle="356, 144, 400, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' class='tk3N6e-y4JFTd' aaname='' /&gt;" Guid="973478e9-038f-422e-9301-6799ca94bbdb" InformativeScreenshot="3d9ab62ea56724aeefba0b307a8dd889.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -177,7 +177,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="479,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="478.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.954978170539974%2C-44.0568955&amp;z=13" CVScreenId="fc725692-29e4-4a73-8f63-b7a197e10f82" CvElementArea="781, 151, 23, 22" CvType="Icon" DesignTimeRectangle="781, 151, 23, 23" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl src='//ssl.gstatic.com/ui/v1/button/search-white.png' tag='IMG' type='' class='tk3N6e-LgbsSe-RJLb9c' aaname='' /&gt;" Guid="29c1f6d1-6e81-4261-8487-c811c63c25f0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKjSURBVEhLvZPbTxNBFIf3v+NSRDSK8qISDMqjMWrkDTURkYttMbFFQQgql0SUBBWDPFCMEgUL0QdMBJUEhYRe6HZ3Z/by88yICu20EjHb5NucdM6cb8/MWa2iw4FfaBXtNvzCbxmnwB+0QDuDX2iBNgr+woEgw/EoR8NdjtourszZDSSzKFBT3WmhcZhjaMbB9KKLmU8upj+6GJ1z5P8Hg+p9hSgoE6KWMY43Sy42Mh6SWQ8rCQ8J3QOzgbnPLi4/5jJPtV+FFmg1oaJxiEmRkLxddtEzZSP8nKMvZkuR7QDxLy7O3mPY366ukYtWTo9cqm6YGHxty46EqHGY/V6rpMIXBhiW1j0pjExy1Ny0duwvBMkMCnZyLGIitujIrrqneN66oP8lR8rw8GTeRn23KJafk4tS1tBj0TA4WNnwEKKjU+U0jTCspz1MfHBoSkVn+Tm5aOXXs8jlRMSg6XPkMPTGOCrbdq4HiMgkk52PL9g4LTrbtl4IpUwwOmtvTZ1Dd/SnmBAdDhlYTXpwPSA0zlAdpjffWi8GyXQK8rk4aGJ22ZFDsLTu0h0xND00ZUerSReOC9n5+Qc0aYr9KrSyFh0qqjp0XBox8Y46E8IUHZm4oyQJREe/vrf5rw5uvWCojWaVdbZDsgwFag4FdZzpN6iYhbE4x8R7G88WOB2dhXP3DSnaND18T7kYeMVQ1yWE6lqCojLBvtYMjnbqqL+dpUHI4tQdcWd0LLQmXkKIxG+Nuh4k4ckiQpJtUvBv1EZ12dFa+qfwG4n7YhaOhEXx/Hyt7Foae6EumqGOLCkyuYencYaaTiquyNVK6bFX6roy6J2ypOjKI4OOXp1HshQFe6c6lKaO0iRSrwv+m2w3aKXNSfiFv7KS5gT8Qiu5SoEvJPADQzRIfc3DTbEAAAAASUVORK5CYII=" InformativeScreenshot="364f7e14ba363188f7a139421b3ed5ee.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -198,7 +198,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Roteamento'" sap:VirtualizedContainerService.HintSize="479,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Roteamento'" sap:VirtualizedContainerService.HintSize="478.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.951751277385572%2C-44.189828399999996&amp;z=18" DesignTimeRectangle="958, 554, 20, 32" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' src='https://maps.gstatic.com/mapfiles/transparent.png' tag='IMG' class='' aaname='' /&gt;" Guid="e6822e64-b1dd-48ee-bba0-d181277202db" InformativeScreenshot="4f5948dcadb84bbbe407899d1919b484.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -219,7 +219,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Adicionar ao mapa'" sap:VirtualizedContainerService.HintSize="479,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Adicionar ao mapa'" sap:VirtualizedContainerService.HintSize="478.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.951751277385572%2C-44.189828399999996&amp;z=18" CVScreenId="c53d09d6-23fe-4508-9703-d28803828298" CvTextArea="818, 502, 128, 17" CvTextArgument="+ Adicionar ao mapa" CvType="Text" DesignTimeRectangle="813, 495, 139, 30" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Adicionar ao mapa' tag='DIV' type='' class='JIbV8-TaUzNb-LgbsSe' check:innerText='Adicionar ao mapa' /&gt;" Guid="c938428f-9fb1-428c-bd3d-505d8334640c" InformativeScreenshot="7e573810271c2908c5e6e8a555e50071.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -240,7 +240,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'Remover'" sap:VirtualizedContainerService.HintSize="479,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Remover'" sap:VirtualizedContainerService.HintSize="478.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.951751277385572%2C-44.189828399999996&amp;z=18" CVScreenId="cadbc361-41da-44f6-8a7a-305d41296d61" CvTextArea="1059, 414, 53, 12" CvTextArgument="Remover" CvType="Text" DesignTimeRectangle="1060, 409, 51, 21" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='OzwZjf-MZArnb-Rsbfue' tag='DIV' type='' aaname='Remover' check:innerText='Remover' /&gt;" Guid="40642694-dbf6-48cc-a575-025e252ef104" InformativeScreenshot="fe4f701ff91309de7c7efc82d65b8a09.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -261,7 +261,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="1" DisplayName="Click 'LI map-infowindow-edit-…'" sap:VirtualizedContainerService.HintSize="479,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Click 'LI map-infowindow-edit-…'" sap:VirtualizedContainerService.HintSize="478.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.951751277385572%2C-44.189828399999996&amp;z=18" CVScreenId="9bd1a952-8200-4676-881a-0115b0b8d931" CvElementArea="1017, 494, 21, 20" CvType="Icon" DesignTimeRectangle="1017, 493, 21, 24" DesignTimeScaleFactor="1" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl aria-label='Editar' tag='LI' type='' class='i4ewOd-TaUzNb-LgbsSe i4ewOd-TaUzNb-Bz112c-LgbsSe i4ewOd-TaUzNb-DyVDA' aaname='' /&gt;" Guid="9e4ef5d8-b9de-4eb2-aec8-9a37f0da461a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAcCAYAAACUJBTQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADaSURBVEhL7dExC4MwEIbh/nNBHEQFEQdxECf/k6uTg4iDIG5fuZBKaTzNaelQ8kIWDXly+sAPcogoh2BZFpRliSAI0HWdfrrfZaSqKniep5bv+2jbVr8xEyM0Qd/3GMcRcRxvUJIkeoeZCJnnGUVRIAxDDMOgVhRFCmmaRu8ys0YIyPN8uzlN8YLqusa6rnqnmRXyCbxD0zTpXXynCAfQStNUTXLWIUK3PAJspqBYhA6gg+4CFItwQJZlIoBikT2APh39I2nWyFWAskLuABSLfDOHiHKIqH9BgCdaGH66G5316wAAAABJRU5ErkJggg==" InformativeScreenshot="2762567bf6ce7570c98edf3dfe98058e.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -282,7 +282,7 @@
                   </uix:VerifyExecutionOptions>
                 </uix:NClick.VerifyOptions>
               </uix:NClick>
-              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV  map-infowindow-att...'" sap:VirtualizedContainerService.HintSize="479,189" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="back" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ContinueOnError="True" DelayBefore="1" DelayMS="1" DisplayName="Send Hotkey 'DIV  map-infowindow-att...'" sap:VirtualizedContainerService.HintSize="478.4,189.6" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="back" KeyModifiers="None" SpecialKey="True">
                 <ui:SendHotkey.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="25021453-dbd9-43f8-8ef5-19a88099e0ee" InformativeScreenshot="4e4ae72626d5283c5f77801e6a406196" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' tag='DIV' /&gt;">
                     <ui:Target.TimeoutMS>
@@ -294,7 +294,7 @@
                   </ui:Target>
                 </ui:SendHotkey.Target>
               </ui:SendHotkey>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Salvar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="479,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Text="[colaborador]" Version="V4">
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Type Into 'Salvar'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="478.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Text="[colaborador]" Version="V4">
                 <uix:NTypeInto.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.947286788387352%2C-44.13662857712251&amp;z=19" CVScreenId="643cbd79-cec8-4aef-8345-98cb86192151" CvElementArea="1089, 556, 260, 25" CvType="InputBox" DesignTimeRectangle="1090, 557, 258, 23" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl type='' class='i4ewOd-TaUzNb-r4nke i4ewOd-TaUzNb-p83tee-lTBxed' tag='DIV' aaname='' /&gt;" Guid="45649d32-b01c-4a16-88ef-675cdcc32793" InformativeScreenshot="d01499ce7c5b97c586d813efe8e0094a.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
@@ -315,7 +315,7 @@
                   </uix:VerifyExecutionTypeIntoOptions>
                 </uix:NTypeInto.VerifyOptions>
               </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Salvar'" sap:VirtualizedContainerService.HintSize="479,218" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
+              <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="1" DisplayName="Click 'Salvar'" sap:VirtualizedContainerService.HintSize="478.4,218.4" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
                 <uix:NClick.Target>
                   <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.951751277385572%2C-44.189828399999996&amp;z=18" CVScreenId="ef40822c-f9fe-4cca-88e2-b37d35c338a2" CvElementArea="808, 493, 74, 31" CvTextArea="828, 502, 34, 12" CvTextArgument="Salvar" CvType="Button" DesignTimeRectangle="809, 494, 72, 29" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Salvar' aria-role='button' tag='DIV' type='' class='VIpgJd-TzA9Ye-eEGnhe tk3N6e-LgbsSe tk3N6e-LgbsSe-JIbuQc' check:innerText='Salvar' /&gt;" Guid="35225b0d-789f-4e52-85fa-7e90778a2332" InformativeScreenshot="d1065356e9f2b2d41fbe0a623976b48c.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                     <uix:TargetAnchorable.Anchors>
