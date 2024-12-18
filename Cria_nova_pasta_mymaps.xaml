@@ -1,0 +1,256 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Cria_nova_pasta_mymaps" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_url_turno_limpa" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>Cria_nova_pasta_mymaps_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Cria_nova_pasta_mymaps" sap:VirtualizedContainerService.HintSize="850.4000000000001,1593.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="url_mapa_turno_limpa" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="483.2,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[url_mapa_turno_limpa]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[in_url_turno_limpa]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" ContinueOnError="False" DisplayName="Use Browser Firefox: Turnos- Google My Maps" sap:VirtualizedContainerService.HintSize="483.2,1420.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Timeout="3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="449.6,1180.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="False" AlterIfDisabled="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="4" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="b5f5c8df-d77c-4738-9d4f-73e05229eae6" CvElementArea="64, 426, 21, 20" CvType="CheckBox" DesignTimeRectangle="68, 426, 18, 18" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='DIV' type='' class='tk3N6e-MPu53c-qE2ISc' aaname='' /&gt;" Guid="35e07920-256c-4d02-ad8f-e6d0704fe8ad" InformativeScreenshot="992190ed6c278e0da5de59bbdc87b3b5.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="b5f5c8df-d77c-4738-9d4f-73e05229eae6" CvTextArea="90, 376, 70, 16" CvTextArgument="Visualizar" CvType="Text" DesignTimeRectangle="62, 373, 97, 26" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='' aaname='Visualizar' check:innerText='Visualizar' /&gt;" Guid="ce7dfda3-7ccf-4341-bd5a-73c2edc867ff" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayAfter="1" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="0e89e101-c01c-4fca-83f3-a95ea987d9ef" CvElementArea="378, 420, 26, 32" CvType="Icon" DesignTimeRectangle="379, 424, 26, 26" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aria-label='Opções da camada' tag='DIV' type='' class='un1lmc-j4gsHd' aaname='' /&gt;" Guid="fb47380d-3637-4137-813f-5b37822a1ae8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADTSURBVEhL7ZU/C4YgEIf75tFaoy3R92jKwdmtf4N9hYImp+Bebgnea9ALMQIfcPF+8KCemsFLZHQiFkkcjUfiZVmgrmuoqgqUUrTsBVu8bRsURQF5nl9jHEcac8IWz/P8J8XRdR2NOWGL932/rXgYBhpzwhYjeMZCiLhnHIpvic/zhGmaQGsN1lpa9oItRmnbtldjlWUJx3HQmBO22Bhzu05SShpzwhav63oT931PY07YYtzqpmnibzWCcnwmozZXKL4lTt9i+hZ9eCQOQRJH4zXxD5SurWGg6j/xAAAAAElFTkSuQmCC" InformativeScreenshot="077a343cd3cdb29316ae1fe8781fbf97.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="0e89e101-c01c-4fca-83f3-a95ea987d9ef" CvTextArea="90, 376, 70, 16" CvTextArgument="Visualizar" CvType="Text" DesignTimeRectangle="62, 373, 97, 26" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='' aaname='Visualizar' check:innerText='Visualizar' /&gt;" Guid="eba1a991-3af8-4f0f-9ac9-264cd90b976f" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayAfter="1" DisplayName="Click 'Excluir esta camada'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="3a82e6b0-195a-431a-8723-9bf207bdbf4b" CvTextArea="99, 504, 148, 16" CvTextArgument="Excluir esta camada" CvType="Text" DesignTimeRectangle="100, 502, 174, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Excluir esta camada' tag='DIV' type='' class='VIpgJd-j7LFlb-bN97Pc' check:innerText='Excluir esta camada' /&gt;" Guid="cb7da691-98d3-4c38-9e14-5364ebf368b0" InformativeScreenshot="0337064cf9f2e183aaae01c4b4f230dc.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="3a82e6b0-195a-431a-8723-9bf207bdbf4b" CvTextArea="99, 469, 174, 15" CvTextArgument="Renomear esta camada" CvType="Text" DesignTimeRectangle="100, 466, 174, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Renomear esta camada' tag='DIV' type='' class='VIpgJd-j7LFlb-bN97Pc' check:innerText='Renomear esta camada' /&gt;" Guid="60fcec70-9450-487f-9d0b-de13d1e532c5" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayAfter="4" DisplayName="Click 'Excluir'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="ac9250f4-0d3d-4ff6-ba93-334194f15b06" CvElementArea="801, 611, 94, 40" CvTextArea="824, 622, 46, 15" CvTextArgument="Excluir" CvType="Button" DesignTimeRectangle="802, 613, 90, 36" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Excluir' tag='BUTTON' type='' class='VIpgJd-ldDVFe-zTETae VIpgJd-ldDVFe-JIbuQc' check:innerText='Excluir' /&gt;" Guid="a1e5fac2-7b12-4da5-abf9-80b0698e4e84" InformativeScreenshot="7d1bbef279231a31c7a9d5ab46e76288.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="ac9250f4-0d3d-4ff6-ba93-334194f15b06" CvElementArea="911, 611, 94, 39" CvTextArea="929, 622, 57, 13" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="912, 613, 90, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Cancelar' type='' tag='BUTTON' class='' check:innerText='Cancelar' /&gt;" Guid="cde1d1d4-3f0c-4e30-a430-b505a80246a0" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CheckBox'" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="992fe56e-abe7-4c93-9892-daeb374ea74d" CvElementArea="64, 426, 21, 20" CvType="CheckBox" DesignTimeRectangle="67, 429, 15, 15" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl aria-role='checkbox' tag='SPAN' type='' class='tk3N6e-MPu53c VIpgJd-TzA9Ye-eEGnhe tk3N6e-MPu53c-barxie tk3N6e-MPu53c-XpnDCe' aaname='' /&gt;" Guid="0b7010c7-5e32-46db-a667-f8fdec386806" InformativeScreenshot="a199027381551346ff6b9115ab091e46.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CVScreenId="992fe56e-abe7-4c93-9892-daeb374ea74d" CvTextArea="90, 376, 70, 16" CvTextArgument="Visualizar" CvType="Text" DesignTimeRectangle="62, 373, 97, 26" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='' aaname='Visualizar' check:innerText='Visualizar' /&gt;" Guid="d179131c-1839-4c4a-aab3-5ad15fb7d866" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Firefox" IconBase64="AAABAAIAEBAAAAEAIAAoBQAAJgAAACAgAAABACAAKBQAAE4FAAAoAAAAEAAAACAAAAABACAAAAAAAAAFAAAAAAAAAAAAAAAAAAAAAAAAN0TbnzdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0TbnzdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/m6Lt/4+W6/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/+bo+//m6Pv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/4KK6f///////////4KK6f83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/0RQ3f/m6Pv////////////m6Pv/RFDd/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/+ore///////////////////////6it7/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/9pc+T/////////////////////////////////aXPk/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/tLny///////z8/3/gorp/4KK6f/z8/3//////7S58v83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/83Q9v//////qK3v/zdE2/83RNv/qK3v///////m6Pv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2//N0Pb//////83Q9v83RNv/N0Tb/83Q9v//////zdD2/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/gorp////////////2tz4/9rc+P///////////4KK6f83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/+0ufL//////////////////////7S58v83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/2lz5P+ore//qK3v/2lz5P83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0TbnzdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0TbnwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAAAIAAAAEAAAAABACAAAAAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAAADdE2483RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0TbjwAAAAA3RNuPN0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0TbjzdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/XWfi/11n4v83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2//z8/3/8/P9/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/dn7m////////////dn7m/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/+0ufL///////////+0ufL/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/UFvg//////////////////////9QW+D/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/+0ufL//////////////////////7S58v83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/XWfi/////////////////////////////////11n4v83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2//N0Pb/////////////////////////////////zdD2/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/j5br////////////////////////////////////////////j5br/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/1Bb4P/z8/3////////////////////////////////////////////z8/3/UFvg/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/zdD2///////////////////////////////////////////////////////N0Pb/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/3Z+5v////////////////////////////////////////////////////////////////92fub/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/5uj7/////////////////////////////////////////////////////////////////+bo+/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/2lz5P/////////////////////////////////N0Pb/zdD2/////////////////////////////////3Z+5v83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/qK3v///////////////////////z8/3/XWfi/zdE2/83RNv/XWfi//Pz/f//////////////////////tLny/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2//N0Pb//////////////////////4KK6f83RNv/N0Tb/zdE2/83RNv/gorp///////////////////////N0Pb/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/83Q9v//////////////////////aXPk/zdE2/83RNv/N0Tb/zdE2/9pc+T///////////////////////////83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/zdD2//////////////////////+Ciun/N0Tb/zdE2/83RNv/N0Tb/4KK6f//////////////////////zdD2/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/+ore///////////////////////+bo+/9EUN3/N0Tb/zdE2/9EUN3/5uj7//////////////////////+0ufL/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/2lz5P////////////////////////////Pz/f/N0Pb/zdD2//Pz/f///////////////////////////2lz5P83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/83Q9v/////////////////////////////////////////////////////////////////N0Pb/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/UFvg//Pz/f//////////////////////////////////////////////////////8/P9/1Bb4P83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/XWfi/+bo+////////////////////////////////////////////+bo+/9dZ+L/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/RFDd/5ui7f/z8/3///////////////////////Pz/f+ore//RFDd/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/9pc+T/j5br/4+W6/9pc+T/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0TbjzdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE248AAAAAN0TbjzdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNv/N0Tb/zdE2/83RNuPAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" sap2010:WorkflowViewState.IdRef="TargetApp_1" Selector="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" Title="Turno 1 - Google My Maps" Url="[url_mapa_turno_limpa]" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

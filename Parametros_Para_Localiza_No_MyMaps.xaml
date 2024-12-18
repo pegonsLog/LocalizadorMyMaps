@@ -115,7 +115,7 @@
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Parametros_Para_Localiza_No_MyMaps" sap:VirtualizedContainerService.HintSize="1095,1306" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Parametros_Para_Localiza_No_MyMaps" sap:VirtualizedContainerService.HintSize="1156,2508" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url_turno_1" />
       <Variable x:TypeArguments="x:String" Name="url_turno_2" />
@@ -126,13 +126,18 @@
       <Variable x:TypeArguments="sd:DataTable" Name="dt_nao_encontrados" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_turno_especifico" />
       <Variable x:TypeArguments="x:String" Name="url_turno_especifico" />
+      <Variable x:TypeArguments="x:String" Name="turno2" />
+      <Variable x:TypeArguments="x:String" Name="turno1" />
+      <Variable x:TypeArguments="x:String" Name="turno3" />
+      <Variable x:TypeArguments="x:String" Name="turno4" />
+      <Variable x:TypeArguments="x:String" Name="turno5" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,272" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="478.4,429.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -140,7 +145,7 @@
               <OutArgument x:TypeArguments="x:String">[url_turno_1]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.965369993083073%2C-44.1157128&amp;z=14</InArgument>
+              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;usp=drive_link</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
@@ -148,7 +153,7 @@
               <OutArgument x:TypeArguments="x:String">[url_turno_2]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/u/0/edit?mid=15t1Q72WQM6HDEnkfgqC5qYcULEeIEz8&amp;ll=-13.01979959819408%2C-51.925279499999995&amp;z=4</InArgument>
+              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/edit?mid=15t1Q72WQM6HDEnkfgqC5qYcULEeIEz8&amp;usp=drive_link</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
@@ -156,7 +161,7 @@
               <OutArgument x:TypeArguments="x:String">[url_turno_3]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/u/0/edit?mid=1UYHY-xun5RMMo9yTWT0kzu_FwooD-s0&amp;ll=-13.01979959819408%2C-51.925279499999995&amp;z=4</InArgument>
+              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/edit?mid=1UYHY-xun5RMMo9yTWT0kzu_FwooD-s0&amp;usp=drive_link</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
@@ -164,7 +169,7 @@
               <OutArgument x:TypeArguments="x:String">[url_turno_4]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/u/0/edit?mid=1mfIaoopHKwjWtTAuM5BE6fJW46aVSfY&amp;ll=-13.01979959819408%2C-51.925279499999995&amp;z=4</InArgument>
+              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/edit?mid=1mfIaoopHKwjWtTAuM5BE6fJW46aVSfY&amp;usp=drive_link</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_11">
@@ -172,40 +177,110 @@
               <OutArgument x:TypeArguments="x:String">[url_turno_5]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/u/0/edit?mid=1rghOzB3AbGRpLgpos_PSulKrWPIZUXM&amp;ll=-13.01979959819408%2C-51.925279499999995&amp;z=4</InArgument>
+              <InArgument x:TypeArguments="x:String">https://www.google.com/maps/d/edit?mid=1rghOzB3AbGRpLgpos_PSulKrWPIZUXM&amp;usp=drive_link</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[turno1]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Turno 1</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_13">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[turno2]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Turno 2</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_14">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[turno3]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Turno 3</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_15">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[turno4]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Turno 4</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_16">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[turno5]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">Turno 5</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 1" sap:VirtualizedContainerService.HintSize="479,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="False" DisplayName="Cria_nova_pasta_mymaps Turno 1" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Cria_nova_pasta_mymaps.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_limpa">[url_turno_1]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="False" DisplayName="Cria_nova_pasta_mymaps Turno 2" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Cria_nova_pasta_mymaps.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_limpa">[url_turno_2]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Cria_nova_pasta_mymaps Turno 3" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Cria_nova_pasta_mymaps.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_limpa">[url_turno_3]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="False" DisplayName="Cria_nova_pasta_mymaps Turno 4" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Cria_nova_pasta_mymaps.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_limpa">[url_turno_4]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="False" DisplayName="Cria_nova_pasta_mymaps Turno 5" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Cria_nova_pasta_mymaps.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_limpa">[url_turno_5]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 1" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_turno_especifico">[io_dt_logradouros_t1]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_mymaps">[url_turno_1]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_turno_atual">[turno1]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 2" sap:VirtualizedContainerService.HintSize="479,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 2" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_turno_especifico">[io_dt_logradouros_t2]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_mymaps">[url_turno_2]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_turno_atual">[turno2]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 3" sap:VirtualizedContainerService.HintSize="479,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 3" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_turno_especifico">[io_dt_logradouros_t3]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_mymaps">[url_turno_3]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_turno_atual">[turno3]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 4" sap:VirtualizedContainerService.HintSize="479,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 4" sap:VirtualizedContainerService.HintSize="478.4,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_turno_especifico">[io_dt_logradouros_t4]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_mymaps">[url_turno_4]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_turno_atual">[turno4]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 5" sap:VirtualizedContainerService.HintSize="479,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_No_My_Maps -Turno 5" sap:VirtualizedContainerService.HintSize="478.4,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_turno_especifico">[io_dt_logradouros_t5]</InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_mymaps">[url_turno_5]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_turno_atual">[turno5]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>

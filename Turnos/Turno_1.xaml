@@ -152,13 +152,13 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1368,8082" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1366.4,8126.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="AbreMapaMyMaps" sap:VirtualizedContainerService.HintSize="1368,8059" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence DisplayName="AbreMapaMyMaps" sap:VirtualizedContainerService.HintSize="1366.4,8103.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
       <Sequence.Variables>
         <Variable x:TypeArguments="ugdm:GDriveRemoteItem" Name="FolderResult" />
         <Variable x:TypeArguments="sd:DataTable" Name="dt_lista_logradouros_filtrada" />
@@ -177,37 +177,37 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="pegons.log@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="1334,7976" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_3" UseConnectionService="False" UserEmail="pegons.log@gmail.com">
+      <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="pegons.log@gmail.com" Connector="uipath-google-drive" DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="1332.8,8020" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_3" UseConnectionService="False" UserEmail="pegons.log@gmail.com">
         <ugad:GoogleDriveApplicationScope.Body>
           <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1300,7811" sap2010:WorkflowViewState.IdRef="Sequence_41">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1299.2,7855.2" sap2010:WorkflowViewState.IdRef="Sequence_41">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Firefox: Meu Drive - Google Drive" sap:VirtualizedContainerService.HintSize="1266,7751" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="ee3c64d5-f622-4e67-827e-82a08dfe81b2" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Firefox: Meu Drive - Google Drive" sap:VirtualizedContainerService.HintSize="1265.6,7795.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="ee3c64d5-f622-4e67-827e-82a08dfe81b2" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1232,7511" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1232,7515.2" sap2010:WorkflowViewState.IdRef="Sequence_42">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <Sequence sap:VirtualizedContainerService.HintSize="1198,497" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                      <Sequence sap:VirtualizedContainerService.HintSize="1198.4,499.2" sap2010:WorkflowViewState.IdRef="Sequence_53">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_6">
                           <Assign.To>
                             <OutArgument x:TypeArguments="s:DateTime">[startTime]</OutArgument>
                           </Assign.To>
@@ -215,9 +215,9 @@
                             <InArgument x:TypeArguments="s:DateTime">[DateTime.Now]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:BuildDataTable DataTable="[dt_encontrados]" DisplayName="Data Table Encontrados" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;COLABORADOR&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ENDERECO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TURNO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-                        <ui:BuildDataTable DataTable="[dt_nao_encontrados]" DisplayName="Data Table Nao encontrados" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;COLABORADOR&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ENDERECO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TURNO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-                        <Assign sap:VirtualizedContainerService.HintSize="434,107" sap2010:WorkflowViewState.IdRef="Assign_7">
+                        <ui:BuildDataTable DataTable="[dt_encontrados]" DisplayName="Data Table Encontrados" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;COLABORADOR&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ENDERECO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TURNO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                        <ui:BuildDataTable DataTable="[dt_nao_encontrados]" DisplayName="Data Table Nao encontrados" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;COLABORADOR&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ENDERECO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TURNO&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                        <Assign sap:VirtualizedContainerService.HintSize="433.6,107.2" sap2010:WorkflowViewState.IdRef="Assign_7">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
                           </Assign.To>
@@ -226,31 +226,31 @@
                           </Assign.Value>
                         </Assign>
                       </Sequence>
-                      <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="1198,644" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+                      <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="1198.4,644" sap2010:WorkflowViewState.IdRef="SequenceX_1">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="512,550" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="1 - A processar\1 - Enderecos_Colaboradores.xlsx">
+                        <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510.4,550.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="1 - A processar\1 - Enderecos_Colaboradores.xlsx">
                           <ueab:ExcelApplicationCard.Body>
                             <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="478,256" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                              <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="476.8,256" sap2010:WorkflowViewState.IdRef="Sequence_44">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="444,194" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Endereços_Colaboradores&quot;).Range(&quot;A1&quot;)]" SaveTo="[dt_lista_logradouros]" />
+                                <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="443.2,194.4" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Endereços_Colaboradores&quot;).Range(&quot;A1&quot;)]" SaveTo="[dt_lista_logradouros]" />
                               </Sequence>
                             </ActivityAction>
                           </ueab:ExcelApplicationCard.Body>
                         </ueab:ExcelApplicationCard>
                       </ueab:SequenceX>
-                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_lista_logradouros]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1198,406" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                      <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_lista_logradouros]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1198.4,407.2" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                         <ui:ForEachRow.Body>
                           <ActivityAction x:TypeArguments="sd:DataRow">
                             <ActivityAction.Argument>
@@ -707,7 +707,7 @@
                                                             <InArgument x:TypeArguments="x:Int32">[contador + 1]</InArgument>
                                                           </Assign.Value>
                                                         </Assign>
-                                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" DisplayName="Status atual do processo" sap:VirtualizedContainerService.HintSize="434,110" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;---------------------------------------------------------------&quot;  &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;Total de logradouros:   &quot;  &amp; dt_lista_logradouros_filtrada.RowCount.ToString &amp;&#xD;&#xA;Environment.NewLine &amp; &quot;Endereços processados:   &quot; &amp; contador  &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;Qte de sucessos:   &quot;  &amp; dt_encontrados.RowCount.ToString &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;Qte de fracassos:   &quot; &amp; dt_nao_encontrados.RowCount &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;% de sucesso:   &quot; &amp; ((dt_encontrados.RowCount / dt_lista_logradouros_filtrada.RowCount) * 100).ToString(&quot;F1&quot;) &amp; &quot;%&quot; &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;% de fracasso:   &quot; &amp; ((dt_nao_encontrados.RowCount / dt_lista_logradouros_filtrada.RowCount) * 100).ToString(&quot;F1&quot;) &amp; &quot;%&quot; &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;Faltam:   &quot;  &amp; dt_lista_logradouros_filtrada.RowCount - contador &amp; &quot; endereços&quot; &amp;&#xD;&#xA;Environment.NewLine &amp; &quot;Tempo decorrido:   &quot; &amp; ((DateTime.Now - startTime).TotalMinutes).ToString(&quot;F0&quot;) &amp; &quot; minutos&quot; &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xD;&#xA;Environment.NewLine &amp; &quot;Tempo estimado para o término:   &quot;  &amp; ((((DateTime.Now - startTime).TotalMinutes) / (contador)) * (dt_lista_logradouros_filtrada.RowCount - contador)).ToString(&quot;F1&quot;)  &amp; &quot; minutos&quot; &amp;&#xD;&#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;]" />
+                                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" DisplayName="Status atual do processo" sap:VirtualizedContainerService.HintSize="434,110" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;---------------------------------------------------------------&quot;  &amp; &#xA;Environment.NewLine &amp; &quot;Total de logradouros:   &quot;  &amp; dt_lista_logradouros_filtrada.RowCount.ToString &amp;&#xA;Environment.NewLine &amp; &quot;Endereços processados:   &quot; &amp; contador  &amp; &#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xA;Environment.NewLine &amp; &quot;Qte de sucessos:   &quot;  &amp; dt_encontrados.RowCount.ToString &amp; &#xA;Environment.NewLine &amp; &quot;Qte de fracassos:   &quot; &amp; dt_nao_encontrados.RowCount &amp; &#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xA;Environment.NewLine &amp; &quot;% de sucesso:   &quot; &amp; ((dt_encontrados.RowCount / dt_lista_logradouros_filtrada.RowCount) * 100).ToString(&quot;F1&quot;) &amp; &quot;%&quot; &amp; &#xA;Environment.NewLine &amp; &quot;% de fracasso:   &quot; &amp; ((dt_nao_encontrados.RowCount / dt_lista_logradouros_filtrada.RowCount) * 100).ToString(&quot;F1&quot;) &amp; &quot;%&quot; &amp; &#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xA;Environment.NewLine &amp; &quot;Faltam:   &quot;  &amp; dt_lista_logradouros_filtrada.RowCount - contador &amp; &quot; endereços&quot; &amp;&#xA;Environment.NewLine &amp; &quot;Tempo decorrido:   &quot; &amp; ((DateTime.Now - startTime).TotalMinutes).ToString(&quot;F0&quot;) &amp; &quot; minutos&quot; &amp; &#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;  &amp; &#xA;Environment.NewLine &amp; &quot;Tempo estimado para o término:   &quot;  &amp; ((((DateTime.Now - startTime).TotalMinutes) / (contador)) * (dt_lista_logradouros_filtrada.RowCount - contador)).ToString(&quot;F1&quot;)  &amp; &quot; minutos&quot; &amp;&#xA;Environment.NewLine &amp; &quot;---------------------------------------------------------------&quot;]" />
                                                       </Sequence>
                                                     </uix:NCheckState.IfExists>
                                                     <uix:NCheckState.IfNotExists>
