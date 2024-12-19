@@ -3,7 +3,6 @@
     <x:Property Name="in_dt_turno_especifico" Type="InArgument(sd:DataTable)" />
     <x:Property Name="in_url_turno_mymaps" Type="InArgument(x:String)" />
     <x:Property Name="in_turno_atual" Type="InArgument(x:String)" />
-    <x:Property Name="in_completo_ou_bairro" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
@@ -119,19 +118,19 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1196,6444" sap2010:WorkflowViewState.IdRef="Sequence_19">
+  <Sequence sap:VirtualizedContainerService.HintSize="1196,6413" sap2010:WorkflowViewState.IdRef="Sequence_19">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Sequência principal" sap:VirtualizedContainerService.HintSize="1196,6421" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence DisplayName="Sequência principal" sap:VirtualizedContainerService.HintSize="1196,6390" sap2010:WorkflowViewState.IdRef="Sequence_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="buscagooglesearch" sap:VirtualizedContainerService.HintSize="1162,6338" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence DisplayName="buscagooglesearch" sap:VirtualizedContainerService.HintSize="1162,6307" sap2010:WorkflowViewState.IdRef="Sequence_2">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="local_google_search" />
           <Variable x:TypeArguments="x:String" Name="local_extraido_google_search" />
@@ -166,7 +165,7 @@
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1128,303" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+        <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="1128,272" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
           <ui:MultipleAssign.AssignOperations>
             <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
               <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_12">
@@ -207,14 +206,6 @@
                 </ui:AssignOperation.To>
                 <ui:AssignOperation.Value>
                   <InArgument x:TypeArguments="x:String">[in_turno_atual]</InArgument>
-                </ui:AssignOperation.Value>
-              </ui:AssignOperation>
-              <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_17">
-                <ui:AssignOperation.To>
-                  <OutArgument x:TypeArguments="x:String">[completo_ou_bairro]</OutArgument>
-                </ui:AssignOperation.To>
-                <ui:AssignOperation.Value>
-                  <InArgument x:TypeArguments="x:String">[in_completo_ou_bairro]</InArgument>
                 </ui:AssignOperation.Value>
               </ui:AssignOperation>
             </scg:List>
@@ -260,7 +251,7 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT mapsprosearch-fie…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="990,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Text="[CurrentRow.Item(&quot;ENDERECO COM BAIRRO&quot;).ToString]" Timeout="5" Version="V4">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'INPUT mapsprosearch-fie…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="990,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Text="[CurrentRow.Item(&quot;BAIRRO E MUNICIPIO&quot;).ToString]" Timeout="5" Version="V4">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="https://www.google.com/maps/d/u/0/edit?mid=14fqKd3RsryYoRQVeKWgncx6eMqvwIRo&amp;ll=-19.954978170539974%2C-44.0568955&amp;z=13" CVScreenId="fc725692-29e4-4a73-8f63-b7a197e10f82" CvElementArea="354, 143, 403, 36" CvType="InputBox" DesignTimeRectangle="356, 144, 400, 34" DesignTimeScaleFactor="1" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='' class='tk3N6e-y4JFTd' aaname='' /&gt;" Guid="973478e9-038f-422e-9301-6799ca94bbdb" InformativeScreenshot="3d9ab62ea56724aeefba0b307a8dd889.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -471,10 +462,10 @@
                                 </uix:NClick>
                                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="434,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Version="V4">
                                   <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" DesignTimeRectangle="965, 747, 17, 17" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aria-role='grid' tag='TABLE' /&gt;&lt;webctrl aria-label='RGB (0, 0, 0)' type='' tag='DIV' class='VIpgJd-nEeMgc-jAhtR' aaname='' /&gt;" Guid="1132d28f-ac86-4132-b23c-e6e450c6c94a" InformativeScreenshot="9b10238d43cbba8b96e2b006af4f7e88.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Roteamento - Google My Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
+                                    <uix:TargetAnchorable BrowserURL="google.com/maps/d/u/0/edit" DesignTimeRectangle="671, 627, 14, 14" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl aria-role='grid' tag='TABLE' /&gt;&lt;webctrl aria-label='RGB (255, 82, 82)' type='' tag='DIV' class='VIpgJd-nEeMgc-jAhtR' aaname='' /&gt;" Guid="d636bd93-5028-4504-b28f-d925f939aec3" InformativeScreenshot="9c3f4db9c3e14faef98dd1c8c6c2a657.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
                                         <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target DesignTimeRectangle="914, 747, 17, 17" FuzzySelectorArgument="&lt;webctrl aria-role='grid' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='VIpgJd-nEeMgc-jAhtR' aaname='' /&gt;" Guid="6c295ddd-f016-40f3-a9f3-f6d2a10c5c1e" SearchSteps="FuzzySelector" />
+                                          <uix:Target DesignTimeRectangle="657, 641, 14, 14" FuzzySelectorArgument="&lt;webctrl aria-role='grid' tag='TABLE' /&gt;&lt;webctrl type='' tag='DIV' class='VIpgJd-nEeMgc-jAhtR' aaname='' /&gt;" Guid="d5cd34f4-e231-4b24-96f9-07350f4e7240" SearchSteps="FuzzySelector" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
@@ -579,7 +570,7 @@
                                     <OutArgument x:TypeArguments="s:String[]">[array_localizados_mymaps]</OutArgument>
                                   </Assign.To>
                                   <Assign.Value>
-                                    <InArgument x:TypeArguments="s:String[]">[{CurrentRow.item("COLABORADOR").ToString, CurrentRow.Item("ENDERECO").ToString, CurrentRow.Item("TURNO").ToString}]</InArgument>
+                                    <InArgument x:TypeArguments="s:String[]">[{CurrentRow.item("COLABORADOR COMPLETO").ToString, CurrentRow.Item("BAIRRO E MUNICIPIO").ToString, CurrentRow.Item("TURNO").ToString}]</InArgument>
                                   </Assign.Value>
                                 </Assign>
                                 <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[array_localizados_mymaps]" DataTable="[dt_encontrados]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="434,218" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />

@@ -114,7 +114,7 @@
       <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1156,3062.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1095,3014" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_planilha_bruta" />
       <Variable x:TypeArguments="x:Int32" Name="índice">
@@ -131,71 +131,71 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="ConcatenaPlanilha" sap:VirtualizedContainerService.HintSize="704,3039.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence DisplayName="ConcatenaPlanilha" sap:VirtualizedContainerService.HintSize="708,2991" sap2010:WorkflowViewState.IdRef="Sequence_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="670.4,2956" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="674,2908" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
         <ueab:ExcelProcessScopeX.Body>
           <ActivityAction x:TypeArguments="ui:IExcelProcess">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="636.8,2846.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="640,2798" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="603.2,2786.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="1 - A processar\1 - Enderecos_Colaboradores.xlsx">
+              <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="606,2738" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="1 - A processar\1 - Enderecos_Colaboradores.xlsx">
                 <ueab:ExcelApplicationCard.Body>
                   <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                     </ActivityAction.Argument>
-                    <Sequence sap:VirtualizedContainerService.HintSize="569.6,2453.6" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <Sequence sap:VirtualizedContainerService.HintSize="572,2446" sap2010:WorkflowViewState.IdRef="Sequence_8">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="True" sap:VirtualizedContainerService.HintSize="536,148" sap2010:WorkflowViewState.IdRef="ClearRangeX_3" TargetRange="[Excel.Sheet(&quot;Endereços_concatenados&quot;).Range(&quot;A1&quot;)]" />
-                      <Sequence sap:VirtualizedContainerService.HintSize="536,2062.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <ueab:ClearRangeX DisplayName="Clear Sheet/Range/Table" HasHeaders="True" sap:VirtualizedContainerService.HintSize="538,148" sap2010:WorkflowViewState.IdRef="ClearRangeX_3" TargetRange="[Excel.Sheet(&quot;Endereços_concatenados&quot;)]" />
+                      <Sequence sap:VirtualizedContainerService.HintSize="538,2056" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="502.4,1970.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="504,1964" sap2010:WorkflowViewState.IdRef="Sequence_4">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="468.8,201.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Enderecos_Colaboradores&quot;)]" SaveTo="[dt_planilha_bruta]" />
-                          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="COLABORADOR COMPLETO" DataTable="[dt_planilha_bruta]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="468.8,220" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-                          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="ENDERECO COM BAIRRO" DataTable="[dt_planilha_bruta]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="468.8,220" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-                          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="ENDERECO SEM BAIRRO" DataTable="[dt_planilha_bruta]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="468.8,220" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
-                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[índice]" DataTable="[dt_planilha_bruta]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="468.8,914.4" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="470,201" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Enderecos_Colaboradores&quot;)]" SaveTo="[dt_planilha_bruta]" />
+                          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="COLABORADOR COMPLETO" DataTable="[dt_planilha_bruta]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+                          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="ENDERECO COM BAIRRO" DataTable="[dt_planilha_bruta]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+                          <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="BAIRRO E MUNICIPIO" DataTable="[dt_planilha_bruta]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="470,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[índice]" DataTable="[dt_planilha_bruta]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="470,915" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                             <ui:ForEachRow.Body>
                               <ActivityAction x:TypeArguments="sd:DataRow">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="467.2,732.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="468,735" sap2010:WorkflowViewState.IdRef="Sequence_5">
                                   <Sequence.Variables>
                                     <Variable x:TypeArguments="x:String" Name="colaborador" />
                                     <Variable x:TypeArguments="x:String" Name="endereco_com_bairro" />
-                                    <Variable x:TypeArguments="x:String" Name="endereco_sem_bairro" />
+                                    <Variable x:TypeArguments="x:String" Name="bairro_e_municipio" />
                                   </Sequence.Variables>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[colaborador]</OutArgument>
                                     </Assign.To>
@@ -203,7 +203,7 @@
                                       <InArgument x:TypeArguments="x:String">[CurrentRow("COLABORADOR").ToString.Trim + " - " + CurrentRow("ENDERECO").ToString.Trim + ", " + CurrentRow("BAIRRO").ToString.Trim + ", " + CurrentRow("CEP").ToString.Trim + ", " + CurrentRow("MUNICIPIO").ToString.Trim + ", " + CurrentRow("ESTADO").ToString.Trim + ", " + CurrentRow("TURNO").ToString.Trim]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_3">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[endereco_com_bairro]</OutArgument>
                                     </Assign.To>
@@ -211,15 +211,15 @@
                                       <InArgument x:TypeArguments="x:String">[CurrentRow("ENDERECO").ToString.Trim + ", " + CurrentRow("BAIRRO").ToString.Trim + ", " + CurrentRow("CEP").ToString.Trim + ", " + CurrentRow("MUNICIPIO").ToString.Trim + ", " + CurrentRow("ESTADO").ToString.Trim]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_5">
                                     <Assign.To>
-                                      <OutArgument x:TypeArguments="x:String">[endereco_sem_bairro]</OutArgument>
+                                      <OutArgument x:TypeArguments="x:String">[bairro_e_municipio]</OutArgument>
                                     </Assign.To>
                                     <Assign.Value>
-                                      <InArgument x:TypeArguments="x:String">[CurrentRow("ENDERECO").ToString.Trim + ", " + CurrentRow("CEP").ToString.Trim + ", " + CurrentRow("MUNICIPIO").ToString.Trim + ", " + CurrentRow("ESTADO").ToString.Trim]</InArgument>
+                                      <InArgument x:TypeArguments="x:String">[CurrentRow("BAIRRO").ToString.Trim + ", " + CurrentRow("CEP").ToString.Trim + ", " + CurrentRow("MUNICIPIO").ToString.Trim + ", " + CurrentRow("ESTADO").ToString.Trim]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_2">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("COLABORADOR COMPLETO")]</OutArgument>
                                     </Assign.To>
@@ -227,7 +227,7 @@
                                       <InArgument x:TypeArguments="x:Object">[colaborador]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("ENDERECO COM BAIRRO")]</OutArgument>
                                     </Assign.To>
@@ -235,22 +235,22 @@
                                       <InArgument x:TypeArguments="x:Object">[endereco_com_bairro]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                  <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_6">
                                     <Assign.To>
-                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("ENDERECO SEM BAIRRO")]</OutArgument>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("BAIRRO E MUNICIPIO")]</OutArgument>
                                     </Assign.To>
                                     <Assign.Value>
-                                      <InArgument x:TypeArguments="x:Object">[endereco_sem_bairro]</InArgument>
+                                      <InArgument x:TypeArguments="x:Object">[bairro_e_municipio]</InArgument>
                                     </Assign.Value>
                                   </Assign>
                                 </Sequence>
                               </ActivityAction>
                             </ui:ForEachRow.Body>
                           </ui:ForEachRow>
-                          <ui:ExcelWriteRange AddHeaders="False" DataTable="[dt_planilha_bruta]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="468.8,111.2" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Endereços_concatenados" StartingCell="A1" />
+                          <ui:ExcelWriteRange AddHeaders="False" DataTable="[dt_planilha_bruta]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="470,111" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Endereços_concatenados" StartingCell="A1" />
                         </Sequence>
                       </Sequence>
-                      <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Endereços_concatenados&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="536,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[dt_planilha_bruta]" />
+                      <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Endereços_concatenados&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="538,182" sap2010:WorkflowViewState.IdRef="WriteRangeX_2" IgnoreEmptySource="False" Source="[dt_planilha_bruta]" />
                     </Sequence>
                   </ActivityAction>
                 </ueab:ExcelApplicationCard.Body>
