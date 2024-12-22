@@ -105,7 +105,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Cria_nova_pasta_mymaps" sap:VirtualizedContainerService.HintSize="850.4000000000001,1593.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Cria_nova_pasta_mymaps" sap:VirtualizedContainerService.HintSize="1156,1595.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="url_mapa_turno_limpa" />
     </Sequence.Variables>
@@ -128,13 +128,13 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" ContinueOnError="False" DisplayName="Use Browser Firefox: Turnos- Google My Maps" sap:VirtualizedContainerService.HintSize="483.2,1420.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Timeout="3" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" ContinueOnError="False" DisplayName="Use Browser Firefox: Turnos- Google My Maps" sap:VirtualizedContainerService.HintSize="483.2,1422.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Timeout="3" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="449.6,1180.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="449.6,1182.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -142,9 +142,9 @@
             </sap:WorkflowViewStateService.ViewState>
             <uix:NClick ActivateBefore="False" AlterIfDisabled="True" ClickType="Single" ContinueOnError="True" DelayAfter="1" DelayBefore="4" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="b5f5c8df-d77c-4738-9d4f-73e05229eae6" CvElementArea="64, 426, 21, 20" CvType="CheckBox" DesignTimeRectangle="68, 426, 18, 18" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='DIV' type='' class='tk3N6e-MPu53c-qE2ISc' aaname='' /&gt;" Guid="35e07920-256c-4d02-ad8f-e6d0704fe8ad" InformativeScreenshot="992190ed6c278e0da5de59bbdc87b3b5.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="b5f5c8df-d77c-4738-9d4f-73e05229eae6" CvElementArea="64, 426, 21, 20" CvType="CheckBox" DesignTimeRectangle="68, 426, 18, 18" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aria-role='presentation' tag='DIV' type='' class='tk3N6e-MPu53c-qE2ISc' aaname='' /&gt;" Guid="35e07920-256c-4d02-ad8f-e6d0704fe8ad" InformativeScreenshot="992190ed6c278e0da5de59bbdc87b3b5.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="b5f5c8df-d77c-4738-9d4f-73e05229eae6" CvTextArea="90, 376, 70, 16" CvTextArgument="Visualizar" CvType="Text" DesignTimeRectangle="62, 373, 97, 26" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='' aaname='Visualizar' check:innerText='Visualizar' /&gt;" Guid="ce7dfda3-7ccf-4341-bd5a-73c2edc867ff" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -163,9 +163,9 @@
             </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayAfter="1" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="0e89e101-c01c-4fca-83f3-a95ea987d9ef" CvElementArea="378, 420, 26, 32" CvType="Icon" DesignTimeRectangle="379, 424, 26, 26" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aria-label='Opções da camada' tag='DIV' type='' class='un1lmc-j4gsHd' aaname='' /&gt;" Guid="fb47380d-3637-4137-813f-5b37822a1ae8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADTSURBVEhL7ZU/C4YgEIf75tFaoy3R92jKwdmtf4N9hYImp+Bebgnea9ALMQIfcPF+8KCemsFLZHQiFkkcjUfiZVmgrmuoqgqUUrTsBVu8bRsURQF5nl9jHEcac8IWz/P8J8XRdR2NOWGL932/rXgYBhpzwhYjeMZCiLhnHIpvic/zhGmaQGsN1lpa9oItRmnbtldjlWUJx3HQmBO22Bhzu05SShpzwhav63oT931PY07YYtzqpmnibzWCcnwmozZXKL4lTt9i+hZ9eCQOQRJH4zXxD5SurWGg6j/xAAAAAElFTkSuQmCC" InformativeScreenshot="077a343cd3cdb29316ae1fe8781fbf97.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="0e89e101-c01c-4fca-83f3-a95ea987d9ef" CvElementArea="378, 420, 26, 32" CvType="Icon" DesignTimeRectangle="379, 424, 26, 26" DesignTimeScaleFactor="1.25" FuzzySelectorArgument="&lt;webctrl aria-label='Opções da camada' tag='DIV' type='' class='un1lmc-j4gsHd' aaname='' /&gt;" Guid="fb47380d-3637-4137-813f-5b37822a1ae8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADTSURBVEhL7ZU/C4YgEIf75tFaoy3R92jKwdmtf4N9hYImp+Bebgnea9ALMQIfcPF+8KCemsFLZHQiFkkcjUfiZVmgrmuoqgqUUrTsBVu8bRsURQF5nl9jHEcac8IWz/P8J8XRdR2NOWGL932/rXgYBhpzwhYjeMZCiLhnHIpvic/zhGmaQGsN1lpa9oItRmnbtldjlWUJx3HQmBO22Bhzu05SShpzwhav63oT931PY07YYtzqpmnibzWCcnwmozZXKL4lTt9i+hZ9eCQOQRJH4zXxD5SurWGg6j/xAAAAAElFTkSuQmCC" InformativeScreenshot="077a343cd3cdb29316ae1fe8781fbf97.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="0e89e101-c01c-4fca-83f3-a95ea987d9ef" CvTextArea="90, 376, 70, 16" CvTextArgument="Visualizar" CvType="Text" DesignTimeRectangle="62, 373, 97, 26" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='' aaname='Visualizar' check:innerText='Visualizar' /&gt;" Guid="eba1a991-3af8-4f0f-9ac9-264cd90b976f" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -182,11 +182,11 @@
                 </uix:VerifyExecutionOptions>
               </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayAfter="1" DisplayName="Click 'Excluir esta camada'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
+            <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayAfter="1" DelayBefore="3" DisplayName="Click 'Excluir esta camada'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Timeout="5" Version="V4">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="3a82e6b0-195a-431a-8723-9bf207bdbf4b" CvTextArea="99, 504, 148, 16" CvTextArgument="Excluir esta camada" CvType="Text" DesignTimeRectangle="100, 502, 174, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Excluir esta camada' tag='DIV' type='' class='VIpgJd-j7LFlb-bN97Pc' check:innerText='Excluir esta camada' /&gt;" Guid="cb7da691-98d3-4c38-9e14-5364ebf368b0" InformativeScreenshot="0337064cf9f2e183aaae01c4b4f230dc.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="3a82e6b0-195a-431a-8723-9bf207bdbf4b" CvTextArea="99, 504, 148, 16" CvTextArgument="Excluir esta camada" CvType="Text" DesignTimeRectangle="100, 502, 174, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Excluir esta camada' tag='DIV' type='' class='VIpgJd-j7LFlb-bN97Pc' check:innerText='Excluir esta camada' /&gt;" Guid="cb7da691-98d3-4c38-9e14-5364ebf368b0" InformativeScreenshot="0337064cf9f2e183aaae01c4b4f230dc.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="3a82e6b0-195a-431a-8723-9bf207bdbf4b" CvTextArea="99, 469, 174, 15" CvTextArgument="Renomear esta camada" CvType="Text" DesignTimeRectangle="100, 466, 174, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Renomear esta camada' tag='DIV' type='' class='VIpgJd-j7LFlb-bN97Pc' check:innerText='Renomear esta camada' /&gt;" Guid="60fcec70-9450-487f-9d0b-de13d1e532c5" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -205,9 +205,9 @@
             </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="False" DelayAfter="4" DisplayName="Click 'Excluir'" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="89a666e4-8bb3-4a1d-8211-0ce4bcbb53b2" Version="V4">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="ac9250f4-0d3d-4ff6-ba93-334194f15b06" CvElementArea="801, 611, 94, 40" CvTextArea="824, 622, 46, 15" CvTextArgument="Excluir" CvType="Button" DesignTimeRectangle="802, 613, 90, 36" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Excluir' tag='BUTTON' type='' class='VIpgJd-ldDVFe-zTETae VIpgJd-ldDVFe-JIbuQc' check:innerText='Excluir' /&gt;" Guid="a1e5fac2-7b12-4da5-abf9-80b0698e4e84" InformativeScreenshot="7d1bbef279231a31c7a9d5ab46e76288.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+                <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="ac9250f4-0d3d-4ff6-ba93-334194f15b06" CvElementArea="801, 611, 94, 40" CvTextArea="824, 622, 46, 15" CvTextArgument="Excluir" CvType="Button" DesignTimeRectangle="802, 613, 90, 36" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Excluir' tag='BUTTON' type='' class='VIpgJd-ldDVFe-zTETae VIpgJd-ldDVFe-JIbuQc' check:innerText='Excluir' /&gt;" Guid="a1e5fac2-7b12-4da5-abf9-80b0698e4e84" InformativeScreenshot="7d1bbef279231a31c7a9d5ab46e76288.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="ac9250f4-0d3d-4ff6-ba93-334194f15b06" CvElementArea="911, 611, 94, 39" CvTextArea="929, 622, 57, 13" CvTextArgument="Cancelar" CvType="Button" DesignTimeRectangle="912, 613, 90, 36" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Cancelar' type='' tag='BUTTON' class='' check:innerText='Cancelar' /&gt;" Guid="cde1d1d4-3f0c-4e30-a430-b505a80246a0" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -228,7 +228,7 @@
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="google.com/maps/d/edit" CVScreenId="992fe56e-abe7-4c93-9892-daeb374ea74d" CvElementArea="64, 426, 21, 20" CvType="CheckBox" DesignTimeRectangle="67, 429, 15, 15" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl aria-role='checkbox' tag='SPAN' type='' class='tk3N6e-MPu53c VIpgJd-TzA9Ye-eEGnhe tk3N6e-MPu53c-barxie tk3N6e-MPu53c-XpnDCe' aaname='' /&gt;" Guid="0b7010c7-5e32-46db-a667-f8fdec386806" InformativeScreenshot="a199027381551346ff6b9115ab091e46.png" ScopeSelectorArgument="&lt;html app='firefox.exe' title='Turno 1 - Google My Maps' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="992fe56e-abe7-4c93-9892-daeb374ea74d" CvTextArea="90, 376, 70, 16" CvTextArgument="Visualizar" CvType="Text" DesignTimeRectangle="62, 373, 97, 26" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' tag='LI' class='' aaname='Visualizar' check:innerText='Visualizar' /&gt;" Guid="d179131c-1839-4c4a-aab3-5ad15fb7d866" SearchSteps="FuzzySelector, CV" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
