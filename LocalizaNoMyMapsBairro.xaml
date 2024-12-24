@@ -114,19 +114,18 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1112,811.04" sap2010:WorkflowViewState.IdRef="Sequence_19">
+  <Sequence sap:VirtualizedContainerService.HintSize="1172.8,589.24" sap2010:WorkflowViewState.IdRef="Sequence_19">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_My_Maps - Invoke Workflow File (Localiza_My_Maps.xaml)" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Localiza_My_Maps - Invoke Workflow File (Localiza_My_Maps.xaml)" sap:VirtualizedContainerService.HintSize="416,197.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Localiza_No_My_Maps.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_logradouros_t1" />
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_logradouros_t2" />
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_logradouros_t3" />
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_logradouros_t4" />
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_logradouros_t5" />
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_turno_especifico" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_url_turno_mymaps" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_turno_atual" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_completo_ou_bairro" />
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
