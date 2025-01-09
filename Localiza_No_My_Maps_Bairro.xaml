@@ -236,7 +236,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ContinueOnError="True" DisplayName="Use Browser Firefox: Roteamento - Google My Maps" sap:VirtualizedContainerService.HintSize="1088,4721.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Timeout="2" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" ContinueOnError="True" DisplayName="Use Browser Firefox: Roteamento - Google My Maps" sap:VirtualizedContainerService.HintSize="1088,4721.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" ScopeGuid="95d643c9-ce33-4a00-ac13-2ab9d5bd3d24" Timeout="2" Version="V2">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
